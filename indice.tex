@@ -1,0 +1,96 @@
+\documentclass[14pt]{extreport}
+
+\usepackage[utf8]{inputenc}
+\usepackage[italian,english]{babel}
+\usepackage{graphicx}
+\usepackage{cite}
+\usepackage{amsmath}
+\usepackage[table,xcdraw]{xcolor}
+\usepackage[italian]{minitoc}% per gli accenti
+\usepackage{fancybox}
+\usepackage{verbatim}
+\usepackage{url}
+\usepackage{color}
+\usepackage{listings}
+\usepackage{makeidx}
+\usepackage{comment}
+
+\lstset{frame=tb,
+	language=Java,
+	numbers=left,
+	keywordstyle=\color{blue},
+	alsoletter={.}
+}
+\graphicspath{ {./Figure/} }
+
+
+
+\begin{document}
+\selectlanguage{italian}
+\begin{titlepage}
+\begin{center}
+	\begin{figure}
+    	\includegraphics[width=1.5cm, height=1.5cm]{unisa.png}
+    	\centering
+    \end{figure}
+	{\Large Università degli Studi di Salerno}\\[0.2truecm]
+	{\large Dipartimento di Informatica\\Corso di Laurea Magistrale in Informatica}\\
+	\hrulefill
+	\vfill
+	{\large Nome esame}\\[0.2truecm]
+	%{\Large Informatica}\\
+	\vfill\vfill
+	{\LARGE {\bf Titolo}}
+	
+	\vfill\vfill
+	
+	
+	\ \ \ \ \ \ \ {\bf Docente} \hfill {\bf Candidato}\ \ \\
+	Prof. \textbf{ Nome docente} \hfill  \textbf{Nome candidato}
+	\centerline{\hfill Matricola: 0000000000}
+	
+	
+	\vfill
+	\hrulefill 
+	\begin{center} Anno Accademico AAAA-AAAA \end{center}
+	
+\end{center}
+\end{titlepage}
+
+\setcounter{page}{1} 		
+\pagenumbering{roman} 
+
+\newpage
+	
+
+\tableofcontents
+\listoffigures %elenco figure
+\listoftables %elenco tabelle
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\chapter*{Introduzione}
+\setcounter{page}{1} 		
+\pagenumbering{arabic} 
+\input{Introduzione.tex}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\chapter{Titolo capitolo}
+\input{Capitolo1.tex}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\chapter{Titolo capitolo}
+\input{Capitolo2.tex}
+
+\chapter{Titolo capitolo}
+\input{Capitolo3.tex}
+
+\input{Bibliografia.tex}
+
+\end{document}
