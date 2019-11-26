@@ -4,3 +4,6 @@
 # Unisa-LaTeX
 
 Unofficial template for UNISA thesis if you need it you can fork it.
+
+## How to use it
+The main file is **indice.tex** you can edit it.
