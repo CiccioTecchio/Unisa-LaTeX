@@ -14,6 +14,24 @@
 \usepackage{listings}
 \usepackage{makeidx}
 \usepackage{comment}
+\usepackage{hyperref}
+%rimuove bordi dai link
+\hypersetup{
+    colorlinks,
+    citecolor=black,
+    filecolor=black,
+    linkcolor=black,
+    urlcolor=black
+}
+%apice
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhf{}
+\setlength{\headheight}{17pt}
+\rhead{Cap.\thechapter}
+\fancyhead[L]{\rightmark}
+%pedice
+\cfoot{\thepage}
 
 \lstset{frame=tb,
 	language=Java,
@@ -23,7 +41,11 @@
 }
 \graphicspath{ {./Figure/} }
 
-
+%formato capitoli, paragrafi e sottoparagrafi
+\usepackage{titlesec}
+\titleformat{\chapter}{\normalfont\huge\bf}{\thechapter.}{20pt}{\huge\bf}
+\titleformat{\section}{\normalfont}{\thesection.}{18pt}{\normalfont\bf}
+\titleformat{\subsection}{\normalfont}{\thesubsection.}{16pt}{\normalfont\bf}
 
 \begin{document}
 \selectlanguage{italian}
